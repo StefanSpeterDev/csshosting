@@ -1,0 +1,28 @@
+.rating:not(:checked)>label {
+    float: right;
+    padding: 0 .1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 130%;
+    line-height: 1.2;
+    color: #d0d0d0;
+    width: 32px
+}
+
+.rating>input:checked~label {
+    color: #ffc700
+}
+
+.rating:not(:checked)>label:hover,
+.rating:not(:checked)>label:hover~label {
+    color: #ffc700
+}
+
+.rating>label:hover+input:checked,
+.rating>label:hover+input:checked,
+.rating>label:hover~input:checked,
+.rating>input:checked~label:hover~label,
+.rating>label:hover~input:checked~label {
+    color: #ffc700
+}
